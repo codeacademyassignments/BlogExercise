@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing 1`] = `
+<footer
+  className="footer"
+>
+  <section
+    className="main-block footer-section"
+  >
+    <p
+      className="footer-para"
+    >
+      @artifact.com 
+      <span>
+        2019
+      </span>
+    </p>
+  </section>
+</footer>
+`;
