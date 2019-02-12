@@ -1,18 +1,20 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Image from './Image.Component';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
+import Image from './Image.component';
 
-describe('snapshot testing',()=>{
-  it('should match the snapshot',()=>{
-  const tree = renderer.create(<Image imageUrl='outdoor.png'/>);
-  expect(tree).toMatchSnapshot();
+const imageName = 'outdoor.png';
+
+describe('Image', () => {
+  it('should match the snapshot', () => {
+    const tree = renderer.create(<Image imageUrl={imageName} />);
+    expect(tree).toMatchSnapshot();
   });
-})
+});
 
-describe('style attributes',()=>{
-  const wrapper = shallow(<Image imageUrl={'outdoor.png'}/>);
-  it('should set the component attribute to correct value',()=>{
-    expect(wrapper.find('.img').prop('style')).toHaveProperty('backgroundImage','url(outdoor.png)');
-  })
-})
+describe('Image', () => {
+  const wrapper = shallow(<Image imageUrl={imageName} />);
+  it('should set the background attribute of div to correct value', () => {
+    expect(wrapper.find('.img').prop('style')).toHaveProperty('backgroundImage', `url(${imageName})`);
+  });
+});

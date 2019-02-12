@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot test snapshot should match 1`] = `
+exports[`ArtFooter snapshot should match 1`] = `
 Array [
   <img
     alt="clapping"

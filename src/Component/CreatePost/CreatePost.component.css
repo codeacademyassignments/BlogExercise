@@ -1,0 +1,17 @@
+.flex-outer{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* height: 76vw; */
+  border: 1px solid black;
+  list-style-type: none;
+}
+
+.button{
+  /* width: 13%;
+  height: 28px; */
+  border-radius: 10px;
+  /* font-size: 121%; */
+  transform: scale(2);
+  margin:2% 2% 2% 6%;
+}

@@ -1,19 +1,32 @@
 import React from 'react';
 import '../../index.css';
-import ArtFooter from '../ArtFooter/ArtFooter.Component';
+import PropTypes from 'prop-types';
+import ArtFooter from '../ArtFooter/ArtFooter.component';
 
-const TextSection = (props)=>{
-  return (
-    <section class = "desc">
-    <span className="left-caption">{props.textContent.date}</span>
-    <span className="right-caption">{props.textContent.readingTime}</span>
-    <br/>
-    <p className="title">{props.textContent.title} </p>
-    <p className="details">{props.textContent.description}</p>
-    <hr/>
-    <ArtFooter liked={props.textContent.liked} claps={props.textContent.claps} onClapClick={props.onClapClick} onHeartClick={props.onHeartClick}/>
-    </section>
-  )
-}
+const TextSection = ({ textContent, onClapClick, onHeartClick }) => (
+  <section className="desc">
+    <span className="left-caption">{textContent.date}</span>
+    <span className="right-caption">{textContent.readingTime}</span>
+    <br />
+    <p className="title">
+      {textContent.title}
+      {' '}
+    </p>
+    <p className="description">{textContent.description}</p>
+    <hr />
+    <ArtFooter liked={textContent.liked} claps={textContent.claps} onClapClick={onClapClick} onHeartClick={onHeartClick} />
+  </section>
+);
 
+TextSection.propTypes = {
+  onClapClick: PropTypes.func.isRequired,
+  onHeartClick: PropTypes.func.isRequired,
+  textContent: PropTypes.shape({
+    date: PropTypes.string.isRequired,
+    readingTime: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+
+};
 export default TextSection;

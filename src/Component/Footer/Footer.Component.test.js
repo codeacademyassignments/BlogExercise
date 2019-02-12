@@ -1,8 +1,8 @@
-import Footer from './Footer.Component.js';
 import React from 'react';
 import renderer from 'react-test-renderer';
+import Footer from './Footer.component';
 
-test('snapshot testing',()=>{
-  const tree = renderer.create(<Footer/>);
+test('Footer', () => {
+  const tree = renderer.create(<Footer />);
   expect(tree).toMatchSnapshot();
 });

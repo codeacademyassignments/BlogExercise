@@ -1,0 +1,374 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreatePost snapshot should match 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CreatePost />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ul
+        className="flex-outer"
+      >
+        <ListElement
+          inputType="text"
+          label="Date"
+          placeholder="Date of Blog"
+        />
+        <ListElement
+          inputType="text"
+          label="Reading Time"
+          placeholder="Reading Time for Blog"
+        />
+        <ListElement
+          inputType="text"
+          label="Title"
+          placeholder="Title for Blog"
+        />
+        <ListElement
+          inputType="text"
+          label="Description"
+          placeholder="Description for Blog"
+        />
+        <li>
+          <button
+            className="button"
+            onClick={[Function]}
+            type="button"
+          >
+            Create Post
+          </button>
+        </li>
+      </ul>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <ListElement
+            inputType="text"
+            label="Date"
+            placeholder="Date of Blog"
+          />,
+          <ListElement
+            inputType="text"
+            label="Reading Time"
+            placeholder="Reading Time for Blog"
+          />,
+          <ListElement
+            inputType="text"
+            label="Title"
+            placeholder="Title for Blog"
+          />,
+          <ListElement
+            inputType="text"
+            label="Description"
+            placeholder="Description for Blog"
+          />,
+          <li>
+            <button
+              className="button"
+              onClick={[Function]}
+              type="button"
+            >
+              Create Post
+            </button>
+          </li>,
+        ],
+        "className": "flex-outer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "inputType": "text",
+            "label": "Date",
+            "placeholder": "Date of Blog",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "inputType": "text",
+            "label": "Reading Time",
+            "placeholder": "Reading Time for Blog",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "inputType": "text",
+            "label": "Title",
+            "placeholder": "Title for Blog",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "inputType": "text",
+            "label": "Description",
+            "placeholder": "Description for Blog",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <button
+              className="button"
+              onClick={[Function]}
+              type="button"
+            >
+              Create Post
+            </button>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Create Post",
+              "className": "button",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": "Create Post",
+            "type": "button",
+          },
+          "type": "li",
+        },
+      ],
+      "type": "ul",
+    },
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul
+          className="flex-outer"
+        >
+          <ListElement
+            inputType="text"
+            label="Date"
+            placeholder="Date of Blog"
+          />
+          <ListElement
+            inputType="text"
+            label="Reading Time"
+            placeholder="Reading Time for Blog"
+          />
+          <ListElement
+            inputType="text"
+            label="Title"
+            placeholder="Title for Blog"
+          />
+          <ListElement
+            inputType="text"
+            label="Description"
+            placeholder="Description for Blog"
+          />
+          <li>
+            <button
+              className="button"
+              onClick={[Function]}
+              type="button"
+            >
+              Create Post
+            </button>
+          </li>
+        </ul>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <ListElement
+              inputType="text"
+              label="Date"
+              placeholder="Date of Blog"
+            />,
+            <ListElement
+              inputType="text"
+              label="Reading Time"
+              placeholder="Reading Time for Blog"
+            />,
+            <ListElement
+              inputType="text"
+              label="Title"
+              placeholder="Title for Blog"
+            />,
+            <ListElement
+              inputType="text"
+              label="Description"
+              placeholder="Description for Blog"
+            />,
+            <li>
+              <button
+                className="button"
+                onClick={[Function]}
+                type="button"
+              >
+                Create Post
+              </button>
+            </li>,
+          ],
+          "className": "flex-outer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "inputType": "text",
+              "label": "Date",
+              "placeholder": "Date of Blog",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "inputType": "text",
+              "label": "Reading Time",
+              "placeholder": "Reading Time for Blog",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "inputType": "text",
+              "label": "Title",
+              "placeholder": "Title for Blog",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "inputType": "text",
+              "label": "Description",
+              "placeholder": "Description for Blog",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="button"
+                onClick={[Function]}
+                type="button"
+              >
+                Create Post
+              </button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Create Post",
+                "className": "button",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Create Post",
+              "type": "button",
+            },
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

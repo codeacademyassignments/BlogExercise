@@ -2,10 +2,11 @@ import React from 'react';
 import '../../index.css';
 
 
-const Image = (props)=>{
+const Image = (props) => {
   const image = require(`../../../Images/${props.imageUrl}`);
   return (
-  <div className='img' style={{backgroundImage:`url(${image})`}}></div>
-)};
+    <div className="img" style={{ backgroundImage: `url(${image})` }} />
+  );
+};
 
 export default Image;

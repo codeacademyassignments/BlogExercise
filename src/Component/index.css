@@ -90,7 +90,7 @@ body{
   font-size: 150%;
   margin: 0%;
 }
-.details{
+.description{
   margin: 4% 0%;
   color: #a9a9a9;
 }
@@ -110,6 +110,10 @@ hr{
 .heart{
   float:right;
   width:10%;
+}
+.createPost{
+  margin: 2% 2% 2% 8%;
+  transform: scale(2);
 }
 .footer{
   background: black;

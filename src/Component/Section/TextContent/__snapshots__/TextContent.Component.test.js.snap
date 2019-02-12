@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot testing snapshot should match 1`] = `
+exports[`TextContent snapshot should match 1`] = `
 <section
-  class="desc"
+  className="desc"
 >
   <span
     className="left-caption"
@@ -22,7 +22,7 @@ exports[`snapshot testing snapshot should match 1`] = `
      
   </p>
   <p
-    className="details"
+    className="description"
   >
     Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your...
   </p>

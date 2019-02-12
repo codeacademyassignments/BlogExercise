@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home snapshot should match 1`] = `
+<section>
+  <header
+    className="header"
+  >
+    <section
+      className="main-block"
+    >
+      <p
+        className="main-heading"
+      >
+        The Artifact
+      </p>
+      <p
+        className="sub-heading"
+      >
+        Culture & Art Blog
+      </p>
+      <nav
+        className="nav"
+      >
+        <ul
+          className="nav-bar"
+        >
+          <li
+            className="nav-element last-element"
+          >
+            Blog
+          </li>
+          <li
+            className="nav-element"
+          >
+            About
+          </li>
+          <li
+            className="nav-element"
+          >
+            Contact
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <section
+    className="main-block"
+  />
+  <section
+    className="main-block"
+  >
+    <button
+      className="createPost"
+      onClick={[Function]}
+    >
+      Create Post
+    </button>
+  </section>
+  <footer
+    className="footer"
+  >
+    <section
+      className="main-block footer-section"
+    >
+      <p
+        className="footer-para"
+      >
+        @artifact.com
+         
+        <span>
+          2019
+        </span>
+      </p>
+    </section>
+  </footer>
+</section>
+`;
+
+exports[`componentDidMount Snapshot should match 1`] = `
+<section>
+  <header
+    className="header"
+  >
+    <section
+      className="main-block"
+    >
+      <p
+        className="main-heading"
+      >
+        The Artifact
+      </p>
+      <p
+        className="sub-heading"
+      >
+        Culture & Art Blog
+      </p>
+      <nav
+        className="nav"
+      >
+        <ul
+          className="nav-bar"
+        >
+          <li
+            className="nav-element last-element"
+          >
+            Blog
+          </li>
+          <li
+            className="nav-element"
+          >
+            About
+          </li>
+          <li
+            className="nav-element"
+          >
+            Contact
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <section
+    className="main-block"
+  />
+  <section
+    className="main-block"
+  >
+    <button
+      className="createPost"
+      onClick={[Function]}
+    >
+      Create Post
+    </button>
+  </section>
+  <footer
+    className="footer"
+  >
+    <section
+      className="main-block footer-section"
+    >
+      <p
+        className="footer-para"
+      >
+        @artifact.com
+         
+        <span>
+          2019
+        </span>
+      </p>
+    </section>
+  </footer>
+</section>
+`;

@@ -1,13 +1,14 @@
 import React,{Component} from 'react';
 import '../index.css';
-import Image from './Image/Image.Component';
-import TextContent from './TextContent/TextContent.Component';
+import Image from './Image/Image.component';
+import TextContent from './TextContent/TextContent.component';
 
 class Section extends Component{
+
   state = {
-    claps : this.props.card.claps,
-    liked : this.props.card.liked,
-  }
+    claps : this.props.blog.claps,
+    liked : this.props.blog.liked,
+  };
 
   onClapClick = ()=>{
     this.setState({
@@ -22,16 +23,16 @@ class Section extends Component{
   }
   render(){
     const textContent = {
-      date: this.props.card.date,
-      readingTime: this.props.card.readingTime,
-      title: this.props.card.title,
-      description: this.props.card.description,
+      date: this.props.blog.date,
+      readingTime: this.props.blog.readingTime,
+      title: this.props.blog.title,
+      description: this.props.blog.description,
       liked: this.state.liked,
       claps: this.state.claps,
     };
    return (
-    <article class='article'>
-    <Image imageUrl={this.props.card.image}/>
+    <article className='article'>
+    <Image imageUrl={this.props.blog.image}/>
     <TextContent textContent = {textContent} onClapClick = {this.onClapClick} onHeartClick = {this.onHeartClick}/>
     </article>
    );

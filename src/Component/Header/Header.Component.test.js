@@ -1,8 +1,8 @@
-import Header from './Header.Component.js';
 import renderer from 'react-test-renderer';
 import React from 'react';
+import Header from './Header.component';
 
-test('snapshot testing',()=>{
+test('Header', () => {
   const tree = renderer.create(<Header />);
   expect(tree).toMatchSnapshot();
 });
