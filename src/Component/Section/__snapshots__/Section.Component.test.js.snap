@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing snapshot should match 1`] = `
+<article
+  class="article"
+>
+  <div
+    className="img"
+    style={
+      Object {
+        "backgroundImage": "url(abstract.png)",
+      }
+    }
+  />
+  <section
+    class="desc"
+  >
+    <span
+      className="left-caption"
+    >
+      2nd Januray, 2018
+    </span>
+    <span
+      className="right-caption"
+    >
+      2 mins
+    </span>
+    <br />
+    <p
+      className="title"
+    >
+      The future of abstract art and the culture ...
+       
+    </p>
+    <p
+      className="details"
+    >
+      Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your...
+    </p>
+    <hr />
+    <img
+      alt="clapping"
+      className="claps"
+      onClick={[Function]}
+      src={
+        Object {
+          "ReactComponent": [Function],
+          "__esModule": true,
+          "default": "clapping.svg",
+        }
+      }
+    />
+    <span
+      className="no-of-claps"
+    >
+      10
+    </span>
+    <img
+      alt="heart-black"
+      className="heart"
+      onClick={[Function]}
+      src={
+        Object {
+          "ReactComponent": [Function],
+          "__esModule": true,
+          "default": "heart-black.svg",
+        }
+      }
+    />
+  </section>
+</article>
+`;

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test snapshot should match 1`] = `
+Array [
+  <img
+    alt="clapping"
+    className="claps"
+    onClick={[Function]}
+    src={
+      Object {
+        "ReactComponent": [Function],
+        "__esModule": true,
+        "default": "clapping.svg",
+      }
+    }
+  />,
+  <span
+    className="no-of-claps"
+  >
+    10
+  </span>,
+  <img
+    alt="heart-black"
+    className="heart"
+    onClick={[Function]}
+    src={
+      Object {
+        "ReactComponent": [Function],
+        "__esModule": true,
+        "default": "heart-red.svg",
+      }
+    }
+  />,
+]
+`;
