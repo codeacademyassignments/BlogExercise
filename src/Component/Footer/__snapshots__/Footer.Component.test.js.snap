@@ -10,7 +10,8 @@ exports[`Footer 1`] = `
     <p
       className="footer-para"
     >
-      @artifact.com 
+      @artifact.com
+       
       <span>
         2019
       </span>

@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from '../Component/Home/Home.component';
-import CreatePost from '../Component/CreatePost/CreatePost.component';
+import App from '../App';
+// import CreatePost from '../Component/CreatePost/CreatePost.component';
+import CreatePost from '../Container/CreatePost.container';
 
-const routing = (
+const Routes = () => (
   <Router>
     <div>
       <Route path="/CreatePost" component={CreatePost} />
-      <Route path="/Home" component={Home} />
+      <Route path="/Home" component={App} />
     </div>
   </Router>
 );
 
-export default routing;
+export default Routes;

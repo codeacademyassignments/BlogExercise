@@ -3,6 +3,7 @@ import '../../index.css';
 
 const ArtFooter = (props) => {
   const heartUrl = props.liked ? 'heart-red.svg' : 'heart-black.svg';
+  console.log(props);
   return (
     <>
       <img

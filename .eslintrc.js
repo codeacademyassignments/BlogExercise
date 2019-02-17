@@ -1,12 +1,16 @@
 module.exports = {
-    "extends": "airbnb",
-    "env": {
-      "jest":true
-    },
-    "rules": {
-      "no-console":0,
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      'max-len': ["error", { "code": 150 }],
-      "jsx-a11y/label-has-for": 0,
-    }
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "react/prefer-stateless-function": 0,
+    "react/jsx-filename-extension": 0,
+    "react/forbid-prop-types": 0,
+    "react/destructuring-assignment": ['never']
+  },
+  "env" : {
+    "es6" : true,
+    "node":true,
+    "jest":true,
+    "browser": true
+  },
 };

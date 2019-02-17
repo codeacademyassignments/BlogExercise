@@ -5,16 +5,7 @@ import renderer from 'react-test-renderer';
 import Home from './Home.component';
 import testData from '../../RawData/RawData';
 
-let mockAxios;
-beforeAll(() => {
-  mockAxios = jest.fn().mockImplementation(() => new Promise(((resolve) => { resolve({ data: testData }); })));
-  axios.get = mockAxios;
-});
-afterAll(() => {
-  jest.resetModules();
-});
-
-describe('Home', () => {
+describe('Home Component', () => {
   it('snapshot should match', () => {
     const tree = renderer.create(<Home />);
     expect(tree).toMatchSnapshot();
@@ -22,24 +13,28 @@ describe('Home', () => {
 });
 
 describe('componentDidMount', () => {
-  it('should call mock function with proper arguements', async (done) => {
-    const wrapper = shallow(<Home />);
+  let mockAxios;
+  let mockDataStore;
+  let mockFetchComplete;
+  beforeAll(() => {
+    mockAxios = jest.fn().mockImplementation(() => new Promise(((resolve) => { resolve({ data: testData }); })));
+    axios.get = mockAxios;
+    mockDataStore = jest.fn();
+    mockFetchComplete = jest.fn();
+  });
+  afterAll(() => {
+    jest.resetModules();
+  });
+  it('should call all mock functions with proper arguements', async (done) => {
+    const wrapper = shallow(<Home fetchState={false} onDataStoreComplete={mockDataStore} onDataFetched={mockFetchComplete} />);
     await wrapper.instance().componentDidMount();
     expect(mockAxios).toHaveBeenCalledWith('https://api.myjson.com/bins/hc5ye');
+    expect(mockDataStore).toHaveBeenCalledWith();
+    expect(mockFetchComplete).toHaveBeenCalledWith(testData);
     done();
   });
-
-  it('should update the state of Home component', async (done) => {
-    const wrapper = shallow(<Home />);
-    expect(wrapper.instance().state.blogs.length).toEqual(0);
-    await wrapper.instance().componentDidMount();
-    // console.log(wrapper.instance());
-    expect(wrapper.instance().state.blogs.length).toEqual(6);
-    done();
-  });
-
-  it('Snapshot should match', () => {
-    const tree = renderer.create(<Home />);
-    expect(tree).toMatchSnapshot();
+  it('should return empty object when fetchState is true', async () => {
+    const wrapper = shallow(<Home fetchState onDataStoreComplete={mockDataStore} onDataFetched={mockFetchComplete} />);
+    expect(await wrapper.instance().componentDidMount()).toEqual({});
   });
 });

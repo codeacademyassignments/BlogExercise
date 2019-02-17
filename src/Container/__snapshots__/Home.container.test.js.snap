@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Component snapshot should match 1`] = `
+exports[`Home Container Snapshot should match with old snapshot 1`] = `
 <section>
   <header
     className="header"

@@ -1,6 +1,5 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
 import TextContent from './TextContent.component';
 import TestData from '../../../RawData/RawData';
 
@@ -13,14 +12,14 @@ describe('TextContent', () => {
   });
 });
 
-describe('ArtFooter', () => {
-  const mockOnClapClick = jest.fn();
-  const mockOnHeartClick = jest.fn();
-  const wrapper = shallow(<TextContent textContent={blog} onClapClick={mockOnClapClick} onHeartClick={mockOnHeartClick} />);
-  it('should have the mockOnClapClick function as onClapClick props', () => {
-    expect(wrapper.find('ArtFooter').props().onClapClick).toEqual(mockOnClapClick);
-  });
-  it('should have the mockOnHeartClick function as onHeartClick props', () => {
-    expect(wrapper.find('ArtFooter').props().onHeartClick).toEqual(mockOnHeartClick);
-  });
-});
+// describe('ArtFooter', () => {
+//   const mockOnClapClick = jest.fn();
+//   const mockOnHeartClick = jest.fn();
+//   const wrapper = shallow(<TextContent textContent={blog} onClapClick={mockOnClapClick} onHeartClick={mockOnHeartClick} />);
+//   it('should have the mockOnClapClick function as onClapClick props', () => {
+//     expect(wrapper.find('ArtFooter').props().onClapClick).toEqual(mockOnClapClick);
+//   });
+//   it('should have the mockOnHeartClick function as onHeartClick props', () => {
+//     expect(wrapper.find('ArtFooter').props().onHeartClick).toEqual(mockOnHeartClick);
+//   });
+// });
