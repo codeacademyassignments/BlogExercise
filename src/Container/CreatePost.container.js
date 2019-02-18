@@ -2,16 +2,18 @@ import { connect } from 'react-redux';
 import { addBlog } from '../Actions/Artifact.actions';
 import CreatePost from '../Component/CreatePost/CreatePost.component';
 
-
-function mapDispatchToProps(dispatch) {
-  return ({
-    onCreatePost: (blog) => {
-      dispatch(addBlog(blog));
-    },
-  });
-}
+// const mapStateToProps = state => ({
+//   nothing: 1,
+// });
+console.log('inside');
+const mapDispatchToProps = dispatch => ({
+  onCreatePost: (blog) => {
+    dispatch(addBlog(blog));
+  },
+});
 
 const createPostApp = connect({
+  // mapStateToProps,
   mapDispatchToProps,
 })(CreatePost);
 

@@ -1,8 +1,11 @@
 import ReactDOM from 'react-dom';
 import './index.css';
 import React from 'react';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import * as serviceWorker from './serviceWorker';
 import Routes from './Routes/Routes';
+import artifactApp from './Reducers/Artifact.reducer';
 
 // import Header from './Component/Header/Header.Component.js';
 // import Footer from './Component/Footer/Footer.Component';
@@ -15,9 +18,9 @@ import Routes from './Routes/Routes';
 // import CreatePost from './Component/CreatePost/CreatePost.Component';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+const store = createStore(artifactApp, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+ReactDOM.render(<Provider store={store}><Routes /></Provider>, document.getElementById('root'));
 
-ReactDOM.render(<Routes />, document.getElementById('root'));
-// const store = createStore(artifactApp);
 
 // ReactDOM.render(
 //   <Provider store={store}>
